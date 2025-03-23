@@ -1,20 +1,33 @@
-# Práctica 2: Interrupciones en ESP32
+# Practica 2 Processadors Digitals
 
-Este repositorio contiene el código y la documentación de la Práctica 2 de la asignatura de Procesadores Digitales. El objetivo de la práctica es comprender el funcionamiento de las interrupciones en un ESP32.
+# Ejercicio A: Interrupción por GPIO
 
-## Descripción del proyecto
+El objetivo de este ejercicio es comprender el funcionamiento de las interrupciones por GPIO en un ESP32, utilizando un pulsador para generar interrupciones y contar el número de pulsaciones.
 
-- **Ejercicio A**: Interrupción por GPIO.
-- **Ejercicio B**: Interrupción por Timer.
+---
 
-## Requisitos
+## **Descripción del Proyecto**
 
-- ESP32
-- PlatformIO
-- Pulsador y LED (opcional)
+En este ejercicio, se utiliza un **pulsador** conectado a un pin GPIO del ESP32 para generar interrupciones. Cada vez que se presiona el pulsador, se incrementa un contador de pulsaciones, y el número total de pulsaciones se muestra en el **monitor serie**.
 
-## Cómo usar
+### **Características principales**:
+- Uso de interrupciones por GPIO para detectar pulsaciones.
+- Contador de pulsaciones que se muestra en el monitor serie.
+- Desactivación automática de la interrupción después de 1 minuto.
 
-1. Clona este repositorio.
-2. Abre el proyecto en PlatformIO.
-3. Carga el código en tu ESP32.
+---
+
+## **Requisitos**
+
+### **Hardware**
+- Placa ESP32.
+- Pulsador.
+- Resistencia pull-up (opcional, ya que se usa la resistencia pull-up interna del ESP32).
+
+### **Software**
+- PlatformIO (recomendado) o Arduino IDE.
+- Librerías estándar de Arduino para ESP32.
+
+## Ramas del repositorio
+
+**Tanto el ejercicio A como el ejercicio B se encuentran en ramas separadas de este mismo repositorio**
